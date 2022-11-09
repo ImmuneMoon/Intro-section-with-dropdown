@@ -20,46 +20,46 @@
 		</head>
 		<body>
 			<header class="items-center">
-				<nav class="flex flex-row justify-between py-6 px-8">
-					<div class="flex flex-row">
+				<nav class="flex flex-row justify-between items-center py-6 px-8">
+					<div class="flex flex-row items-center">
 						<img class="mr-12" src="./images/logo.svg" />
 						<div class="flex flex-col">
-							<div class="flex flex-row relative items-center mx-5">
-								<h2 id="features">
-									Features
-								</h2>
-								<div>
+							<div class="relative mx-5">
+								<button class="flex flex-row items-center" type="button">
+									<h2 id="features">
+										Features
+									</h2>
 									<img class="arrow" src="./images/icon-arrow-down.svg" />
-								</div>
+								</button>
 							</div>
-							<ul id="feat_menu" class="flex flex-col absolute items-center">
-								<li>
-									<a href="#" class="flex flex-row">
-										<img class="h-4 w-4" src="./images/icon-todo.svg" />
+							<ul id="feat_menu" class="flex flex-col absolute hidden">
+								<li id="todo">
+									<a href="#" class="flex flex-row items-center">
+										<img class="h-3.5 mr-3" src="./images/icon-todo.svg" />
 										<h3>
 											Todo List
 										</h3>
 									</a>						
 								</li>
-								<li>
-									<a href="#" class="flex flex-row">
-										<img class="h-4 w-4" src="./images/icon-calendar.svg" />
+								<li id="calendar">
+									<a href="#" class="flex flex-row items-center">
+										<img class="h-3.5 mr-3" src="./images/icon-calendar.svg" />
 										<h3>
 											Calendar
 										</h3>
 									</a>						
 								</li>
-								<li>
-									<a href="#" class="flex flex-row">
-										<img class="h-4 w-4" src="./images/icon-reminders.svg" />
+								<li id="reminders">
+									<a href="#" class="flex flex-row items-center">
+										<img class="h-3.5 mr-3" src="./images/icon-reminders.svg" />
 										<h3>
 											Reminders
 										</h3>
 									</a>						
 								</li>
-								<li>
-									<a href="#" class="flex flex-row">
-										<img class="h-4 w-4" src="./images/icon-planning.svg" />
+								<li id="planning">
+									<a href="#" class="flex flex-row items-center">
+										<img class="h-3.5 mr-3" src="./images/icon-planning.svg" />
 										<h3>
 											Planning
 										</h3>
@@ -69,31 +69,31 @@
 						</div>
 						<div class="flex flex-col items-center">
 							<div class="flex flex-row relative items-center mx-5">
-								<h2 id="company">
-									Company
-								</h2>
-								<div>
+								<button type="button" class="flex flex-row items-center" >
+									<h2 id="company">
+										Company
+									</h2>
 									<img class="arrow" src="./images/icon-arrow-down.svg" />
-								</div>
+								</button>
 							</div>
-							<ul id="comp_menu" class="absolute items-center">
+							<ul id="comp_menu" class="flex flex-col absolute hidden">
 								<li>
 									<a href="#">
-										<h3>
+										<h3 id="history">
 											History
 										</h3>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<h3>
+										<h3 id="team">
 											Our Team
 										</h3>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<h3>
+										<h3 id="blog">
 											Blog
 										</h3>
 									</a>
@@ -112,29 +112,44 @@
 						</a>
 					</div>
 					<div class="flex flex-row items-center">
-						<button id="login">
+						<button id="login" class="mx-10" type="button">
 							Login
 						</button>
-						<button id="register">
+						<button id="register" class="px-4 py-2" type="button">
 							Register
 						</button>
 					</div>
 				</nav>
 			</header>
-			<h1>
-				Make remote work
-		    </h1>
-			<p>
-				Get your team in sync, no matter your location. Streamline processes, 
-				create team rituals, and watch productivity soar.
-			</p>
-			<button>
-				Learn more
-			</button>
+			<main>
+				<div id="content_container" class="flex justify-between flex-col-reverse md:flex-row items-center mt-10 lg:px-16 xl:px-32">
+					<div id="content_1" class="flex flex-col justify-center mt-26 lg:ml-16 mr-auto">
+						<h1 class="mt-20">
+							Make <br>remote work
+						</h1>
+						<p id="info" class="my-10">
+							Get your team in sync, no matter your location. Streamline processes, 
+							create team rituals, and watch productivity soar.
+						</p>
+						<button id="learn_more" class="px-6 py-3">
+							Learn more
+						</button>
+						<div id="partner-container" class="flex flex-row justify-between items-center mt-24">
+							<img class="databiz" src="./images/client-databiz.svg" />
+							<img class="audio" src="./images/client-audiophile.svg" />
+							<img class="meet" src="./images/client-meet.svg" />
+							<img class="maker" src="./images/client-maker.svg" />
+						</div>
+					</div>
+					<div class="">
+						<img id="hero" src="./images/image-hero-desktop.png" />
+					</div>
+				</div>
+			</main>
 			<footer>
 				<div class="attribution">
-					Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-					Coded by <a href="https://www.frontendmentor.io/profile/ImmuneMoon">ImmuneMoon</a>.
+					Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
+					Coded by <a href="https://www.frontendmentor.io/profile/ImmuneMoon">ImmuneMoon</a>
 				</div>
 			</footer>
 		</body>
