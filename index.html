@@ -13,78 +13,114 @@
 			<!-- TailwindCSS -->
 			<script src="https://cdn.tailwindcss.com"></script>
 			<!-- CSS -->
-			<link rel="stylesheet" href="./styles.css">
+			<link href="./styles.css" rel="stylesheet" />
 			<!-- JS -->
 			<script src="./script.js"></script>
 			<title>Frontend Mentor | Intro section with dropdown navigation</title>
 		</head>
 		<body>
-			<div>
-				<h2>
-					Features
-				</h2>
-				<ul>
-					<li class="flex flex-row">
-						<img src="./images/icon-todo.svg" />
-						<a>
-							Todo List
-						</a>						
-					</li>
-					<li class="flex flex-row">
-						<img src="./images/icon-calendar.svg" />
-						<a>
-							Calendar
-						</a>						
-					</li>
-					<li class="flex flex-row">
-						<img src="./images/icon-reminders.svg" />
-						<a>
-							Reminders
-						</a>						
-					</li>
-					<li class="flex flex-row">
-						<img src="./images/icon-planning.svg" />
-						<a>
-							Planning
-						</a>						
-					</li>
-				</ul>
-			</div>
-			<div>
-				<h2>
-					Company
-				</h2>
-				<ul>
-					<li>
-						<a>
-							History
+			<header class="items-center">
+				<nav class="flex flex-row justify-between py-6 px-8">
+					<div class="flex flex-row">
+						<img class="mr-12" src="./images/logo.svg" />
+						<div class="flex flex-col">
+							<div class="flex flex-row relative items-center mx-5">
+								<h2 id="features">
+									Features
+								</h2>
+								<div>
+									<img class="arrow" src="./images/icon-arrow-down.svg" />
+								</div>
+							</div>
+							<ul id="feat_menu" class="flex flex-col absolute items-center">
+								<li>
+									<a href="#" class="flex flex-row">
+										<img class="h-4 w-4" src="./images/icon-todo.svg" />
+										<h3>
+											Todo List
+										</h3>
+									</a>						
+								</li>
+								<li>
+									<a href="#" class="flex flex-row">
+										<img class="h-4 w-4" src="./images/icon-calendar.svg" />
+										<h3>
+											Calendar
+										</h3>
+									</a>						
+								</li>
+								<li>
+									<a href="#" class="flex flex-row">
+										<img class="h-4 w-4" src="./images/icon-reminders.svg" />
+										<h3>
+											Reminders
+										</h3>
+									</a>						
+								</li>
+								<li>
+									<a href="#" class="flex flex-row">
+										<img class="h-4 w-4" src="./images/icon-planning.svg" />
+										<h3>
+											Planning
+										</h3>
+									</a>						
+								</li>
+							</ul>
+						</div>
+						<div class="flex flex-col items-center">
+							<div class="flex flex-row relative items-center mx-5">
+								<h2 id="company">
+									Company
+								</h2>
+								<div>
+									<img class="arrow" src="./images/icon-arrow-down.svg" />
+								</div>
+							</div>
+							<ul id="comp_menu" class="absolute items-center">
+								<li>
+									<a href="#">
+										<h3>
+											History
+										</h3>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h3>
+											Our Team
+										</h3>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h3>
+											Blog
+										</h3>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a class="mx-5" href="#">
+							<h2 id="careers">
+								Careers
+							</h2>
 						</a>
-					</li>
-					<li>
-						<a>
-							Our Team
+						<a class="mx-5" href="#">
+							<h2 id="about">
+								About
+							</h2>
 						</a>
-					</li>
-					<li>
-						<a>
-							Blog
-						</a>
-					</li>
-				</ul>
-			</div>
-			<a href="#">
-				Careers
-			</a>
-			<a href="#">
-				About
-			</a>
-			<button>
-				Login
-			</button>
-			<button>
-				Register
-			</button>
-
+					</div>
+					<div class="flex flex-row items-center">
+						<button id="login">
+							Login
+						</button>
+						<button id="register">
+							Register
+						</button>
+					</div>
+				</nav>
+			</header>
 			<h1>
 				Make remote work
 		    </h1>
@@ -95,10 +131,11 @@
 			<button>
 				Learn more
 			</button>
-
-			<div class="attribution">
-				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-				Coded by <a href="https://www.frontendmentor.io/profile/ImmuneMoon">ImmuneMoon</a>.
-			</div>
+			<footer>
+				<div class="attribution">
+					Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+					Coded by <a href="https://www.frontendmentor.io/profile/ImmuneMoon">ImmuneMoon</a>.
+				</div>
+			</footer>
 		</body>
 	</html>
