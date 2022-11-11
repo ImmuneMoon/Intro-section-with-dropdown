@@ -89,22 +89,17 @@ function menu() {
     if ($('#nav_container').css('display') == 'none') {
         $('#nav_container').css({
             'display' : 'flex',
-            'width' : 'fit-content',
-            'position' : 'absolute',
-            'top' : '0',
-            'right' : '0'
         });
 
+        $('#menu_icn').hide();
     }
 
     else {
         $('#nav_container').css({
-            'display' : 'none',
-            'width' : '100%',
-            'position' : 'static',
-            'top' : 'none',
-            'right' : 'none'
+            'display' : 'none'
         });
+
+        $('#menu_icn').show();
     }
 
     if ($('#veil').css('display') == 'none') {
