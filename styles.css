@@ -152,8 +152,13 @@ footer {
 
     #nav_content {
         height: 100vh;
+        width: fit-content;
         background-color: hsl(0, 0%, 98%);
+        position: absolute;
+        top: 0;
+        right: 0;
     }
+    
     #feat_menu, #comp_menu {
         transform: none;
         box-shadow: none;
