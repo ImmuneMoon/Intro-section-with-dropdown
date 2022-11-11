@@ -18,9 +18,15 @@ header {
     width: 100%;
 }
 
-nav {
+#nav_section, 
+#nav_container, 
+#nav_content {
     width: 100%;
     height: fit-content;
+}
+
+#main_head {
+    width: fit-content;
 }
 
 h2, 
@@ -83,7 +89,7 @@ main, #content_container {
     width: 35em;
 }
 
-h1 {
+#heading {
     font-size: 70px;
     font-weight: 700;
     line-height: 95%;
@@ -111,7 +117,11 @@ p {
 
 #partner-container {
     height: fit-content;
-    width: 28em;
+    width: 26em;
+}
+
+#hero_container {
+    width: fit-content;
 }
 
 #hero {
@@ -130,5 +140,59 @@ footer {
     font-size: 11px; text-align: center; 
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 769px) {
+    #veil {
+        width: 100%;
+        height: 100%;
+        background-color: hsla(0, 0%, 41%, 0.8);
+    }
+
+    #nav_content {
+        height: 100vh;
+        background-color: hsl(0, 0%, 98%);
+    }
+    #feat_menu, #comp_menu {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    #heading {
+        font-size: 50px;
+    }
+    
+    p {
+        width: 21em;
+    }
+
+    #main_head {
+        width: 100%;
+    }
+
+    #content_1 {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 640px) {
+    #heading {
+        font-size: 40px;
+    }
+
+    #content_container {
+        width: fit-content;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    nav {
+        width: fit-content;
+    }
+    
+    #hero {
+        width: 100%;
+    }
 }
