@@ -1,7 +1,7 @@
 // Waits for DOM load
 $(() => {        
     let heading = $('#heading')
-    if ($(document).width() <= 767) {
+    if ($(document).width() <= 753) {
         heading.text("Make remote work");
         $('#hero').attr('src', './images/image-hero-mobile.png')
     }
@@ -12,14 +12,21 @@ $(() => {
     }
 
     window.addEventListener('resize', () => {
-        if ($(document).width() <= 767) {
+        if ($(document).width() <= 753) {
             heading.text("Make remote work");
             $('#hero').attr('src', './images/image-hero-mobile.png')
+
         }
 
         else {
-            heading.innerText = `Make \nremote work`;
+            heading.text('Make \nremote work');
             $('#hero').attr('src', './images/image-hero-desktop.png')
+
+            if ($('#nav_container').css('display') == 'none') {
+                $('#nav_container').css({
+                    'display' : 'flex'
+                });
+            }
         }
     });
 
@@ -92,6 +99,10 @@ function menu() {
         });
 
         $('#menu_icn').hide();
+
+        $('#close').show();
+
+        $('#veil').show();
     }
 
     else {
@@ -100,14 +111,9 @@ function menu() {
         });
 
         $('#menu_icn').show();
-    }
 
-    if ($('#veil').css('display') == 'none') {
-        $('#veil').show();
+        $('#close').hide();
 
-    }
-
-    else {
         $('#veil').hide();
     }
 
