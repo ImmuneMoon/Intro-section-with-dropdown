@@ -35,6 +35,7 @@ h3,
 #company, 
 #login, 
 #register {
+    width: fit-content;
     font-size: 14px;
     font-weight: 500;
 }
@@ -46,17 +47,17 @@ h3,
 }
 
 #feat_menu, #comp_menu {
-    padding: 1.25em;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    background-color: white;
 }
 
 #feat_menu {
-    transform: translateX(-2em) translateY(2em);
+    transform: translateX(-3em) translateY(2em);
 }
 
 #comp_menu {
-    transform: translateX(.55em) translateY(2em);
+    transform: translateX(1em) translateY(2em);
 }
 
 #todo, 
@@ -67,6 +68,11 @@ h3,
     margin-bottom: .5em;
 }
 
+#register {
+    border: 1.5px solid hsl(0, 0%, 8%);
+    border-radius: 12px;
+}
+
 #features:hover, 
 #company:hover, 
 #careers:hover, 
@@ -75,29 +81,25 @@ h3,
 #register:hover {
     color:  hsl(0, 0%, 8%);
 }
-
-#register {
-    border: 1.5px solid hsl(0, 0%, 8%);
-    border-radius: 12px;
-}
-
 main, #content_container {
     width: 100%;
 }
 
 #content_1 {
-    width: 35em;
+    height: 42rem;
+    width: 33rem;
+    transform: translateX(-3em);
 }
 
 #heading {
-    font-size: 70px;
+    font-size: 77px;
     font-weight: 700;
     line-height: 95%;
     color: hsl(0, 0%, 8%);
 }
 
 p {
-    width: 20em;
+    width: 27rem;
     font-size: 18px;
 }
 
@@ -117,7 +119,7 @@ p {
 
 #partner-container {
     height: fit-content;
-    width: 26em;
+    width: 28em;
 }
 
 #hero_container {
@@ -126,7 +128,7 @@ p {
 
 #hero {
     height: auto;
-    width: 27em;
+    width: 30rem;
 }
 
 footer {
@@ -143,25 +145,40 @@ footer {
     color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
+    #content_1 { 
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 767px) {
     #veil {
         width: 100%;
         height: 100%;
-        background-color: hsla(0, 0%, 41%, 0.8);
+        background-color: hsla(0, 0%, 0%, 0.8);
+    }
+
+    #nav_container {
+        height: 100vh;
+        background-color: hsl(0, 0%, 98%);
+        top: 0;
+        right: 0;
+        width: 225px;
     }
 
     #nav_content {
-        height: 100vh;
-        width: fit-content;
-        background-color: hsl(0, 0%, 98%);
-        position: absolute;
-        top: 0;
-        right: 0;
+        width: 100%;
     }
-    
+
     #feat_menu, #comp_menu {
+        width: 100%;
         transform: none;
         box-shadow: none;
+        background: none;
+    }
+
+    #account {
+        width: 100%
     }
     
     #heading {
@@ -178,7 +195,13 @@ footer {
 
     #content_1 {
         width: fit-content;
+        height: fit-content;
     }
+
+    #partner-container {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -190,14 +213,10 @@ footer {
         width: fit-content;
     }
     
-}
-
-@media (max-width: 375px) {
-    nav {
-        width: fit-content;
-    }
-    
-    #hero {
-        width: 100%;
+    #databiz, 
+    #audio, 
+    #meet, 
+    #maker {
+        width: 20%;
     }
 }

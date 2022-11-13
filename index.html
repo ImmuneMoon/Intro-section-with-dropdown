@@ -19,24 +19,27 @@
 			<title>Frontend Mentor | Intro section with dropdown navigation</title>
 		</head>
 		<body class="relative">
-			<div id="veil" class="hidden absolute z-0"></div>
+			<div id="veil" class="hidden absolute z-10"></div>
 			<header class="items-center">
-				<nav id="nav_section" class="flex flex-row justify-between items-center py-6 px-8">
+				<nav id="nav_section" class="flex flex-row justify-between items-center py-6 px-4 md:px-8">
 					<!-- Logo & menu button -->
 					<div id="main_head" class="flex flex-row justify-between">
 						<img class="mr-12" src="./images/logo.svg" />
 						<!-- Expands hidden nav content when viewport is below 768px -->
-						<button id="sandwich_menu" class="block md:hidden">
-							<img id="menu_icn" src="./images/icon-menu.svg" onclick="menu();" alt="menu icon">
+						<button id="sandwich_menu" class="block md:hidden" onclick="menu();">
+							<img id="menu_icn" src="./images/icon-menu.svg"" alt="menu icon">
 						</button>
 					</div>
 					<!-- Nav content -->
-					<div id="nav_container" class="hidden z-1 md:flex justify-end md:justify-center">
-						<div id="nav_content" class="md:flex flex-col md:flex-row justify-start md:justify-between items-center">
+					<div id="nav_container" class="hidden z-20 absolute md:static md:flex flex-col md:flex-row justify-around md:justify-center">
+						<button id="close" class="hidden ml-auto py-6 px-4" onclick="menu();">
+							<img src="./images/icon-close-menu.svg" />
+						</button>
+						<div id="nav_content" class="md:flex flex-col md:flex-row justify-start md:justify-between mr-auto mb-auto md:m-0 md:items-center">
 							<!-- Features section -->
 							<div class="flex flex-col w-min">
 								<!-- Features button -->
-								<div class="relative mx-5">
+								<div class="relative ml-7 md:mx-5">
 									<button id="feat_btn" class="flex flex-row items-center" type="button" onclick="features();">
 										<h2 id="features">
 											Features
@@ -45,7 +48,7 @@
 									</button>
 								</div>
 								<!-- Features items -->
-								<ul id="feat_menu" class="flex flex-col md:absolute hidden">
+								<ul id="feat_menu" class="flex flex-col md:px-6 md:py-4 md:absolute z-10 hidden">
 									<li id="todo">
 										<a href="#" class="flex flex-row items-center">
 											<img class="h-3.5 mr-3" src="./images/icon-todo.svg" />
@@ -83,7 +86,7 @@
 							<!-- Company section -->
 							<div class="flex flex-col items-center w-min">
 								<!-- Company button -->
-								<div class="flex flex-row relative items-center mx-5">
+								<div class="flex flex-row relative items-center ml-7 md:mx-5">
 									<button id="comp_btn" type="button" class="flex flex-row items-center" onclick="company();" >
 										<h2 id="company">
 											Company
@@ -92,7 +95,7 @@
 									</button>
 								</div>
 								<!-- Company items -->
-								<ul id="comp_menu" class="flex flex-col md:absolute hidden">
+								<ul id="comp_menu" class="flex flex-col md:px-6 md:py-4 md:absolute z-10 hidden">
 									<li>
 										<a href="#">
 											<h3 id="history">
@@ -116,50 +119,56 @@
 									</li>
 								</ul>
 							</div>
-							<a class="mx-5 w-min" href="#">
+							<a class="ml-7 md:mx-5" href="#">
 								<h2 id="careers" class="w-min">
 									Careers
 								</h2>
 							</a>
-							<a class="mx-5 w-min" href="#">
+							<a class="ml-7 md:mx-5" href="#">
 								<h2 id="about" class="w-min">
 									About
 								</h2>
 							</a>
 							<!-- Login & register section -->
-							<div class="flex flex-col md:flex-row items-center md:ml-auto w-min">
-								<button id="login" class="mx-10" type="button">
-									Login
-								</button>
-								<button id="register" class="px-4 py-2" type="button">
-									Register
-								</button>
+							<div id="account" class="flex flex-col md:flex-row justify-center md:justify-none items-center md:ml-auto w-min">
+								<a href="#">
+									<button id="login" class="mx-10" type="button">
+										Login
+									</button>
+								</a>
+								<a href="#" class="my-3">
+									<button id="register" class="px-14 md:px-4 py-2" type="button">
+										Register
+									</button>
+								</a>
 							</div>
 						</div>
 					</div>
 				</nav>
 			</header>
 			<main>
-				<div id="content_container" class="flex md:justify-between flex-col-reverse md:flex-row items-center mt-10 mx-auto md:mx-0 lg:px-16 xl:px-32">
-					<div id="content_1" class="flex flex-col justify-between mt-26 mx-0 sm:mx-auto mr-auto md:mr-10">
-						<h1 id="heading" class="text-center md:text-left mt-20 mx-auto md:mx-0">
+				<div id="content_container" class="flex justify-center flex-col-reverse md:flex-row items-center mx-auto md:mb-24 lg:px-16 xl:px-32">
+					<div id="content_1" class="flex flex-col justify-center mb-28 md:mb-0 mx-auto static z-0">
+						<h1 id="heading" class="text-center md:text-left mt-10 md:mt-32 mx-auto md:mx-0">
 							Make <br>remote work
 						</h1>
-						<p id="info" class="mx-auto text-center md:text-left md:mx-0 my-10">
+						<p id="info" class="mx-auto text-center md:text-left md:mx-0 my-7 md:my-14">
 							Get your team in sync, no matter your location. Streamline processes, 
 							create team rituals, and watch productivity soar.
 						</p>
-						<button id="learn_more" class="mx-auto md:mx-0 px-6 py-3">
-							Learn more
-						</button>
-						<div id="partner-container" class="flex flex-row justify-between items-center mt-24 mx-auto md:mx-0">
-							<img class="databiz" src="./images/client-databiz.svg" />
-							<img class="audio" src="./images/client-audiophile.svg" />
-							<img class="meet" src="./images/client-meet.svg" />
-							<img class="maker" src="./images/client-maker.svg" />
+						<a href="#" class="flex justify-center md:justify-start">
+							<button id="learn_more" class="px-6 py-3">
+								Learn more
+							</button>
+						</a>
+						<div id="partner-container" class="flex flex-row justify-between items-center mt-14 md:mt-auto md:mx-0">
+							<img id="databiz" src="./images/client-databiz.svg" />
+							<img id="audio" src="./images/client-audiophile.svg" />
+							<img id="meet" src="./images/client-meet.svg" />
+							<img id="maker" src="./images/client-maker.svg" />
 						</div>
 					</div>
-					<div id="hero_container" class="m-0">
+					<div id="hero_container" class="md:mt-7 md:ml-auto">
 						<img id="hero" src="./images/image-hero-desktop.png" />
 					</div>
 				</div>
