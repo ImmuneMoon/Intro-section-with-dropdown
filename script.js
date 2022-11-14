@@ -77,7 +77,7 @@ $(() => {
             
         }
 
-        if (element.includes($('#learn_more'))) {
+        if (element.includes($('#learn_more')[0])) {
             $('#learn_more').css({
                 'color' : 'hsl(0, 0%, 8%)',
                 'background-color' : 'hsl(0, 0%, 98%)'
