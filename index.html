@@ -19,168 +19,170 @@
 			<title>Frontend Mentor | Intro section with dropdown navigation</title>
 		</head>
 		<body class="relative">
-			<div id="veil" class="hidden fixed z-10"></div>
-			<header class="items-center">
-				<nav id="nav_section" class="flex flex-row justify-between items-center py-6 px-4 md:px-8">
-					<!-- Logo & menu button -->
-					<div id="main_head" class="flex flex-row justify-between">
-						<img class="mr-12" src="./images/logo.svg" />
-						<!-- Expands hidden nav content when viewport is below 768px -->
-						<button id="sandwich_menu" class="block md:hidden" onclick="menu();">
-							<img id="menu_icn" src="./images/icon-menu.svg"" alt="menu icon">
-						</button>
-					</div>
-					<!-- Nav content -->
-					<div id="nav_container" class="hidden z-20 fixed md:static md:flex flex-col md:flex-row justify-around md:justify-center">
-						<button id="close" class="hidden ml-auto py-6 px-4" onclick="menu();">
-							<img src="./images/icon-close-menu.svg" />
-						</button>
-						<div id="nav_content" class="md:flex flex-col md:flex-row justify-start md:justify-between mr-auto mb-auto md:m-0 md:items-center">
-							<!-- Features section -->
-							<div class="flex flex-col w-min">
-								<!-- Features button -->
-								<div class="relative ml-7 md:mx-5">
-									<button id="feat_btn" class="flex flex-row items-center" type="button" onclick="features();">
-										<h2 id="features">
-											Features
-										</h2>
-										<img id="feat_arrow" class="arrow" src="./images/icon-arrow-down.svg" />
-									</button>
-								</div>
-								<!-- Features items -->
-								<ul id="feat_menu" class="flex flex-col px-12 py-4 md:px-6 md:py-6 md:absolute z-10 hidden">
-									<li id="todo">
-										<a href="#" class="flex flex-row items-center">
-											<img class="h-3.5 mr-3" src="./images/icon-todo.svg" />
-											<h3>
-												Todo List
-											</h3>
-										</a>						
-									</li>
-									<li id="calendar">
-										<a href="#" class="flex flex-row items-center">
-											<img class="h-3.5 mr-3" src="./images/icon-calendar.svg" />
-											<h3>
-												Calendar
-											</h3>
-										</a>						
-									</li>
-									<li id="reminders">
-										<a href="#" class="flex flex-row items-center">
-											<img class="h-3.5 mr-3" src="./images/icon-reminders.svg" />
-											<h3>
-												Reminders
-											</h3>
-										</a>						
-									</li>
-									<li id="planning">
-										<a href="#" class="flex flex-row items-center">
-											<img class="h-3.5 mr-3" src="./images/icon-planning.svg" />
-											<h3>
-												Planning
-											</h3>
-										</a>						
-									</li>
-								</ul>
-							</div>
-							<!-- Company section -->
-							<div class="flex flex-col items-center w-min my-4 md:my-0">
-								<!-- Company button -->
-								<div class="flex flex-row relative items-center ml-7 mr-auto md:mx-5">
-									<button id="comp_btn" type="button" class="flex flex-row items-center" onclick="company();" >
-										<h2 id="company">
-											Company
-										</h2>
-										<img id="comp_arrow" class="arrow" src="./images/icon-arrow-down.svg" />
-									</button>
-								</div>
-								<!-- Company items -->
-								<ul id="comp_menu" class="flex flex-col px-12 pt-4 md:px-6 md:py-6 md:absolute z-10 hidden">
-									<li>
-										<a href="#">
-											<h3 id="history">
-												History
-											</h3>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3 id="team" class="w-max">
-												Our Team
-											</h3>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3 id="blog">
-												Blog
-											</h3>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<a class="md:mx-5" href="#">
-								<h2 id="careers" class="ml-7 md:ml-0 w-min">
-									Careers
-								</h2>
-							</a>
-							<a class="md:mx-5" href="#">
-								<h2 id="about" class="my-4 md:my-0 ml-7 md:ml-0 w-min">
-									About
-								</h2>
-							</a>
-							<!-- Login & register section -->
-							<div id="account" class="flex flex-col md:flex-row justify-center md:justify-none items-center md:ml-auto w-min">
-								<a href="#">
-									<button id="login" class="mx-10" type="button">
-										Login
-									</button>
-								</a>
-								<a href="#" class="my-3">
-									<button id="register" class="px-14 md:px-4 py-2" type="button">
-										Register
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-				</nav>
-			</header>
-			<main>
-				<div id="content_container" class="flex justify-center flex-col-reverse md:flex-row items-center mx-auto md:mb-24 lg:px-16 xl:px-32">
-					<div id="content_1" class="flex flex-col justify-center mb-28 md:mb-0 mx-auto static z-0">
-						<h1 id="heading" class="hidden md:block text-center md:text-left mt-10 md:mt-32 mx-auto md:mx-0">
-							Make <br>remote work
-						</h1>
-						<h1 id="heading2" class="md:hidden text-center md:text-left mt-10 md:mt-32 mx-auto md:mx-0">
-							Make remote work
-						</h1>
-						<p id="info" class="mx-auto text-center md:text-left md:mx-0 my-7 md:my-14">
-							Get your team in sync, no matter your location. Streamline processes, 
-							create team rituals, and watch productivity soar.
-						</p>
-						<a href="#" class="flex justify-center md:justify-start">
-							<button id="learn_more" class="px-6 py-3">
-								Learn more
+			<div id="container" class="mx-auto">
+				<div id="veil" class="hidden fixed z-10"></div>
+				<header class="items-center">
+					<nav id="nav_section" class="flex flex-row justify-between items-center py-6 px-4 md:px-8">
+						<!-- Logo & menu button -->
+						<div id="main_head" class="flex flex-row justify-between">
+							<img class="mr-12" src="./images/logo.svg" />
+							<!-- Expands hidden nav content when viewport is below 768px -->
+							<button id="sandwich_menu" class="block md:hidden" onclick="menu();">
+								<img id="menu_icn" src="./images/icon-menu.svg"" alt="menu icon">
 							</button>
-						</a>
-						<div id="partner-container" class="flex flex-row justify-between items-center mt-14 md:mt-auto md:mx-0">
-							<img id="databiz" src="./images/client-databiz.svg" />
-							<img id="audio" src="./images/client-audiophile.svg" />
-							<img id="meet" src="./images/client-meet.svg" />
-							<img id="maker" src="./images/client-maker.svg" />
+						</div>
+						<!-- Nav content -->
+						<div id="nav_container" class="hidden z-20 fixed md:static md:flex flex-col md:flex-row justify-around md:justify-center">
+							<button id="close" class="hidden ml-auto py-6 px-4" onclick="menu();">
+								<img src="./images/icon-close-menu.svg" />
+							</button>
+							<div id="nav_content" class="md:flex flex-col md:flex-row justify-start md:justify-between mr-auto mb-auto md:m-0 md:items-center">
+								<!-- Features section -->
+								<div class="flex flex-col w-min">
+									<!-- Features button -->
+									<div class="relative ml-7 md:mx-5">
+										<button id="feat_btn" class="flex flex-row items-center" type="button" onclick="features();">
+											<h2 id="features">
+												Features
+											</h2>
+											<img id="feat_arrow" class="arrow" src="./images/icon-arrow-down.svg" />
+										</button>
+									</div>
+									<!-- Features items -->
+									<ul id="feat_menu" class="flex flex-col px-12 py-4 md:px-6 md:py-6 md:absolute z-10 hidden">
+										<li id="todo">
+											<a href="#" class="flex flex-row items-center">
+												<img class="h-3.5 mr-3" src="./images/icon-todo.svg" />
+												<h3>
+													Todo List
+												</h3>
+											</a>						
+										</li>
+										<li id="calendar">
+											<a href="#" class="flex flex-row items-center">
+												<img class="h-3.5 mr-3" src="./images/icon-calendar.svg" />
+												<h3>
+													Calendar
+												</h3>
+											</a>						
+										</li>
+										<li id="reminders">
+											<a href="#" class="flex flex-row items-center">
+												<img class="h-3.5 mr-3" src="./images/icon-reminders.svg" />
+												<h3>
+													Reminders
+												</h3>
+											</a>						
+										</li>
+										<li id="planning">
+											<a href="#" class="flex flex-row items-center">
+												<img class="h-3.5 mr-3" src="./images/icon-planning.svg" />
+												<h3>
+													Planning
+												</h3>
+											</a>						
+										</li>
+									</ul>
+								</div>
+								<!-- Company section -->
+								<div class="flex flex-col items-center w-min my-4 md:my-0">
+									<!-- Company button -->
+									<div class="flex flex-row relative items-center ml-7 mr-auto md:mx-5">
+										<button id="comp_btn" type="button" class="flex flex-row items-center" onclick="company();" >
+											<h2 id="company">
+												Company
+											</h2>
+											<img id="comp_arrow" class="arrow" src="./images/icon-arrow-down.svg" />
+										</button>
+									</div>
+									<!-- Company items -->
+									<ul id="comp_menu" class="flex flex-col px-12 pt-4 md:px-6 md:py-6 md:absolute z-10 hidden">
+										<li>
+											<a href="#">
+												<h3 id="history">
+													History
+												</h3>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h3 id="team" class="w-max">
+													Our Team
+												</h3>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h3 id="blog">
+													Blog
+												</h3>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<a class="md:mx-5" href="#">
+									<h2 id="careers" class="ml-7 md:ml-0 w-min">
+										Careers
+									</h2>
+								</a>
+								<a class="md:mx-5" href="#">
+									<h2 id="about" class="my-4 md:my-0 ml-7 md:ml-0 w-min">
+										About
+									</h2>
+								</a>
+								<!-- Login & register section -->
+								<div id="account" class="flex flex-col md:flex-row justify-center md:justify-none items-center md:ml-auto w-min">
+									<a href="#">
+										<button id="login" class="mx-10" type="button">
+											Login
+										</button>
+									</a>
+									<a href="#" class="my-3">
+										<button id="register" class="px-14 md:px-4 py-2" type="button">
+											Register
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</header>
+				<main>
+					<div id="content_container" class="flex justify-center flex-col-reverse md:flex-row items-center mx-auto md:mb-24 lg:px-16 xl:px-32">
+						<div id="content_1" class="flex flex-col justify-center mb-28 md:mb-0 mx-auto static z-0">
+							<h1 id="heading" class="hidden md:block text-center md:text-left mt-10 md:mt-32 mx-auto md:mx-0">
+								Make <br>remote work
+							</h1>
+							<h1 id="heading2" class="md:hidden text-center md:text-left mt-10 md:mt-32 mx-auto md:mx-0">
+								Make remote work
+							</h1>
+							<p id="info" class="mx-auto text-center md:text-left md:mx-0 my-7 md:my-14">
+								Get your team in sync, no matter your location. Streamline processes, 
+								create team rituals, and watch productivity soar.
+							</p>
+							<a href="#" class="flex justify-center md:justify-start">
+								<button id="learn_more" class="px-6 py-3">
+									Learn more
+								</button>
+							</a>
+							<div id="partner-container" class="flex flex-row justify-between items-center mt-14 md:mt-auto md:mx-0">
+								<img id="databiz" src="./images/client-databiz.svg" />
+								<img id="audio" src="./images/client-audiophile.svg" />
+								<img id="meet" src="./images/client-meet.svg" />
+								<img id="maker" src="./images/client-maker.svg" />
+							</div>
+						</div>
+						<div id="hero_container" class="md:mt-7 md:ml-auto">
+							<img id="hero" src="./images/image-hero-desktop.png" />
 						</div>
 					</div>
-					<div id="hero_container" class="md:mt-7 md:ml-auto">
-						<img id="hero" src="./images/image-hero-desktop.png" />
+				</main>
+				<footer>
+					<div class="attribution">
+						Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
+						Coded by <a href="https://www.frontendmentor.io/profile/ImmuneMoon">ImmuneMoon</a>
 					</div>
-				</div>
-			</main>
-			<footer>
-				<div class="attribution">
-					Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
-					Coded by <a href="https://www.frontendmentor.io/profile/ImmuneMoon">ImmuneMoon</a>
-				</div>
-			</footer>
+				</footer>
+			</div>
 		</body>
 	</html>
