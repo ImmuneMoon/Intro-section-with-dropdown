@@ -14,6 +14,11 @@ html, body {
     background-color: hsl(0, 0%, 98%);
 }
 
+#container {
+    max-width: 1440px;
+    height: fit-content;
+}
+
 header {
     width: 100%;
 }
@@ -196,10 +201,6 @@ footer {
         transform: none;
         box-shadow: none;
         background: none;
-    }
-
-    #feat_menu > li > a > h3, #comp_menu > li > a > h3 {
-  
     }
 
     #account {
