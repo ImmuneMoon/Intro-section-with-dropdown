@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ImmuneMoon/Intro-section-with-dropdown)
-- Live Site URL: [Add live site URL here](https://immunemoon.github.io/Intro-section-with-dropdown/)
+- Solution URL: [https://github.com/ImmuneMoon/Intro-section-with-dropdown]
+- Live Site URL: [https://immunemoon.github.io/Intro-section-with-dropdown/]
 
 ### Built with
 
