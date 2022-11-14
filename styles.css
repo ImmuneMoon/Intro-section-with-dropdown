@@ -34,10 +34,10 @@ header {
     width: fit-content;
 }
 
-h2, 
-h3, 
-#features, 
-#company, 
+ #features, 
+#company,
+#careers,
+#about,  
 #login, 
 #register {
     width: fit-content;
@@ -46,6 +46,7 @@ h3,
 }
 
 h3 {
+    font-size: 14px;
     font-weight: 400;
 }
 
