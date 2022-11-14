@@ -27,15 +27,15 @@
 					<nav id="nav_section" class="flex flex-row justify-between items-center py-6 px-4 md:px-8">
 						<!-- Logo & menu button -->
 						<div id="main_head" class="flex flex-row justify-between">
-							<img class="mr-12" src="./images/logo.svg" />
+							<img class="mr-12" src="./images/logo.svg" alt="logo"/>
 							<!-- Expands hidden nav content when viewport is below 768px -->
 							<button id="sandwich_menu" class="block md:hidden" onclick="menu();">
-								<img id="menu_icn" src="./images/icon-menu.svg"" alt="menu icon">
+								<img id="menu_icn" src="./images/icon-menu.svg"" alt="menu">
 							</button>
 						</div>
 						<!-- Nav content -->
 						<div id="nav_container" class="hidden z-20 fixed md:static md:flex flex-col md:flex-row justify-around md:justify-center">
-							<button id="close" class="hidden ml-auto py-6 px-4" onclick="menu();">
+							<button id="close" class="hidden ml-auto py-6 px-4" onclick="menu();" alt="close">
 								<img src="./images/icon-close-menu.svg" />
 							</button>
 							<div id="nav_content" class="md:flex flex-col md:flex-row justify-start md:justify-between mr-auto mb-auto md:m-0 md:items-center">
@@ -53,32 +53,32 @@
 									<!-- Features items -->
 									<ul id="feat_menu" class="flex flex-col px-12 py-4 md:px-6 md:py-6 md:absolute z-10 hidden">
 										<li id="todo">
-											<a href="#" class="flex flex-row items-center">
-												<img class="h-3.5 mr-3" src="./images/icon-todo.svg" />
+											<a href="#" class="flex flex-row items-center" aria-label="Todo List">
+												<img class="h-3.5 mr-3" src="./images/icon-todo.svg" alt="todo icon"/>
 												<h3>
 													Todo List
 												</h3>
 											</a>						
 										</li>
 										<li id="calendar">
-											<a href="#" class="flex flex-row items-center">
-												<img class="h-3.5 mr-3" src="./images/icon-calendar.svg" />
+											<a href="#" class="flex flex-row items-center" aria-label="Calendar">
+												<img class="h-3.5 mr-3" src="./images/icon-calendar.svg" alt="calendar icon"/>
 												<h3>
 													Calendar
 												</h3>
 											</a>						
 										</li>
 										<li id="reminders">
-											<a href="#" class="flex flex-row items-center">
-												<img class="h-3.5 mr-3" src="./images/icon-reminders.svg" />
+											<a href="#" class="flex flex-row items-center" aria-label="Reminders">
+												<img class="h-3.5 mr-3" src="./images/icon-reminders.svg" alt="reminders icon"/>
 												<h3>
 													Reminders
 												</h3>
 											</a>						
 										</li>
 										<li id="planning">
-											<a href="#" class="flex flex-row items-center">
-												<img class="h-3.5 mr-3" src="./images/icon-planning.svg" />
+											<a href="#" class="flex flex-row items-center" aria-label="Planning">
+												<img class="h-3.5 mr-3" src="./images/icon-planning.svg" alt="planning icon"/>
 												<h3>
 													Planning
 												</h3>
@@ -94,27 +94,27 @@
 											<h2 id="company">
 												Company
 											</h2>
-											<img id="comp_arrow" class="arrow" src="./images/icon-arrow-down.svg" />
+											<img id="comp_arrow" class="arrow" src="./images/icon-arrow-down.svg" alt="arrow icon"/>
 										</button>
 									</div>
 									<!-- Company items -->
 									<ul id="comp_menu" class="flex flex-col px-12 pt-4 md:px-6 md:py-6 md:absolute z-10 hidden">
 										<li>
-											<a href="#">
+											<a href="#" aria-label="History">
 												<h3 id="history">
 													History
 												</h3>
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" aria-label="Our Team">
 												<h3 id="team" class="w-max">
 													Our Team
 												</h3>
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" aria-label="Blog">
 												<h3 id="blog">
 													Blog
 												</h3>
@@ -122,24 +122,24 @@
 										</li>
 									</ul>
 								</div>
-								<a class="md:mx-5" href="#">
+								<a class="md:mx-5" href="#" aria-label="Careers">
 									<h2 id="careers" class="ml-7 md:ml-0 w-min">
 										Careers
 									</h2>
 								</a>
-								<a class="md:mx-5" href="#">
+								<a class="md:mx-5" href="#" aria-label="About">
 									<h2 id="about" class="my-4 md:my-0 ml-7 md:ml-0 w-min">
 										About
 									</h2>
 								</a>
 								<!-- Login & register section -->
 								<div id="account" class="flex flex-col md:flex-row justify-center md:justify-none items-center md:ml-auto w-min">
-									<a href="#">
+									<a href="#" aria-label="Login">
 										<button id="login" class="mx-10" type="button">
 											Login
 										</button>
 									</a>
-									<a href="#" class="my-3">
+									<a href="#" class="my-3" aria-label="Register">
 										<button id="register" class="px-14 md:px-4 py-2" type="button">
 											Register
 										</button>
@@ -181,8 +181,8 @@
 				</main>
 				<footer>
 					<div class="attribution">
-						Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
-						Coded by <a href="https://www.frontendmentor.io/profile/ImmuneMoon">ImmuneMoon</a>
+						Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" aria-label="Frontend Mentor">Frontend Mentor</a> 
+						Coded by <a href="https://www.frontendmentor.io/profile/ImmuneMoon" aria-label="ImmuneMoon Profile">ImmuneMoon</a>
 					</div>
 				</footer>
 			</div>
