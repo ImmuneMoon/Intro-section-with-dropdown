@@ -103,6 +103,18 @@ $(() => {
                     'color' : 'hsl(0, 0%, 98%)',
                     'background-color' : 'hsl(0, 0%, 8%)'
                 });
+                // Re-enables hover effect
+                $('#learn_more').hover( () => {
+                    $('#learn_more').css({
+                        'color' : 'hsl(0, 0%, 8%)',
+                        'background-color' : 'hsl(0, 0%, 98%)'
+                    });
+                }, () => {
+                    $('#learn_more').css({
+                        'color' : 'hsl(0, 0%, 98%)',
+                        'background-color' : 'hsl(0, 0%, 8%)'
+                    });
+                });
             }, 150)
         }
 
