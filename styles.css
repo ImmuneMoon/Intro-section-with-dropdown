@@ -34,7 +34,7 @@ header {
     width: fit-content;
 }
 
- #features, 
+#features, 
 #company,
 #careers,
 #about,  
@@ -181,7 +181,8 @@ footer {
     }
 
     h2, 
-    h3, 
+    #careers,
+    #about,  
     #features, 
     #company {
         font-size: 16px;
@@ -190,6 +191,8 @@ footer {
 
     h3 {
         font-weight: 400;
+        font-size: 16px;
+        width: 100%;
     }
 
     .arrow {
