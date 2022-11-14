@@ -45,9 +45,34 @@ header {
     font-weight: 500;
 }
 
-h3 {
+#history_text, 
+#team_text,
+#blog_text,
+#todo_text,
+#calendar_text,
+#reminders_text,
+#planning_text {
     font-size: 14px;
     font-weight: 400;
+    text-align: left;
+}
+
+#todo_text > img {
+    margin-left: .1rem;
+}
+
+#calendar_text > img {
+    margin-left: .05rem;
+
+}
+
+#reminders_text > img {
+    margin-left: .15rem;
+}
+
+#planning_text > img {
+    margin-left: .05rem;
+
 }
 
 .arrow {
@@ -75,7 +100,14 @@ h3 {
 #reminders, 
 #history, 
 #team {
-    margin-bottom: .5em;
+    margin-bottom: .5rem;
+}
+
+#todo,
+#calendar,
+#reminders,
+#planning {
+    width: 100%;
 }
 
 #register {
