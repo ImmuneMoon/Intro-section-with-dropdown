@@ -40,7 +40,6 @@ header {
 #about,  
 #login, 
 #register {
-    width: fit-content;
     font-size: 14px;
     font-weight: 500;
 }
@@ -106,7 +105,7 @@ header {
 #calendar,
 #reminders,
 #planning {
-    width: 100%;
+    width: fit-content;
 }
 
 #register {
@@ -220,7 +219,13 @@ footer {
         width: 100%;
     }
 
-    h3 {
+    #history_text, 
+    #team_text,
+    #blog_text,
+    #todo_text,
+    #calendar_text,
+    #reminders_text,
+    #planning_text {
         font-weight: 400;
         font-size: 16px;
         width: 100%;
@@ -232,7 +237,7 @@ footer {
     }
 
     #feat_menu, #comp_menu {
-        width: 100%;
+        width: 13em;
         transform: none;
         box-shadow: none;
         background: none;
