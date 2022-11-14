@@ -77,6 +77,19 @@ $(() => {
             
         }
 
+        if (element.includes($('#learn_more'))) {
+            $('#learn_more').css({
+                'color' : 'hsl(0, 0%, 8%)',
+                'background-color' : 'hsl(0, 0%, 98%)'
+            });
+            setTimeout(() => {
+                $('#learn_more').css({
+                    'color' : 'hsl(0, 0%, 98%)',
+                    'background-color' : 'hsl(0, 0%, 8%)'
+                });
+            }, 150)
+        }
+
     });
 
     // Listens for scrolling
