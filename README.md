@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/ImmuneMoon/Intro-section-with-dropdown]
-- Live Site URL: [https://immunemoon.github.io/Intro-section-with-dropdown/]
+- Solution URL: [github.com/ImmuneMoon/Intro-section-with-dropdown](https://github.com/ImmuneMoon/Intro-section-with-dropdown)
+- Live Site URL: [immunemoon.github.io/Intro-section-with-dropdown](https://immunemoon.github.io/Intro-section-with-dropdown/)
 
 ### Built with
 
@@ -40,6 +40,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Fulllion](https://immunemoon.github.io/Portfolio/)
+- Website - [Fulllion](https://fulllioncreativeworks.com)
 - Frontend Mentor - [@ImmuneMoon](https://www.frontendmentor.io/profile/ImmuneMoon)
 
