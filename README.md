@@ -1,5 +1,11 @@
 # Frontend Mentor - Intro section with dropdown navigation solution
 
+[![Live site](https://img.shields.io/website?url=https%3A%2F%2Fimmunemoon.github.io%2FIntro-section-with-dropdown%2F&label=live%20site&up_message=online&down_message=offline)](https://immunemoon.github.io/Intro-section-with-dropdown/)
+![Frontend Mentor challenge](https://img.shields.io/badge/Frontend%20Mentor-challenge-3F54A3?logo=frontendmentor&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-styling-06B6D4?logo=tailwindcss&logoColor=white)
+![jQuery](https://img.shields.io/badge/jQuery-3-0769AD?logo=jquery&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
 This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
